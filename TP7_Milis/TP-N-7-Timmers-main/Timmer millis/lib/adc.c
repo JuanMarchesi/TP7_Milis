@@ -14,7 +14,7 @@ void adc_init (int pin){
     while(ADC1 -> CR2 & ADC_CR2_RSTCAL); 
 
     ADC1 -> CR2 |= ADC_CR2_CAL; 
-    while(ADC1 -> CR2 & ADC_CR2_CAL);
+    while (ADC1 -> CR2 & ADC_CR2_CAL);
 
 }
 
